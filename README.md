@@ -105,7 +105,8 @@ const schema = z.object({
 - For **sell**: Walk bids (ZRANGEBYSCORE descending via negative scores).
 - **Do not modify Redis**—simulate only (return hypothetical fills).
 - Response (200 OK):
-```json{
+```json
+{
   "filled": 6.5,
   "avg_price": 103225.3,
   "slippage_pct": 0.24,
