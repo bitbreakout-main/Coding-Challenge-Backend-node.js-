@@ -20,7 +20,7 @@ This challenge tests your ability to handle async data fetching, Redis sorted se
 
 #### 1. Clone and Install:
 ```bash
-git clone <your-starter-repo-url> coding-challenge-node
+git clone https://github.com/bitbreakout-main/Coding-Challenge-Backend-node.js.git
 cd coding-challenge-node
 npm install
 ```
