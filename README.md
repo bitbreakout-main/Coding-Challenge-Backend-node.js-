@@ -72,7 +72,6 @@ Implement the core features in the provided NestJS skeleton (src/app.module.ts, 
 - Handle errors (e.g., network failures) with retries (up to 3) and logging.
 - Hint: Use `setInterval` in an async service. CCXT example: `const exchange = new ccxt.binance(); const book = await exchange.fetchOrderBook('BTC/USDT', 20);`.
 
----
 
 ### 2. WebSocket Endpoint for Real-Time Depth (`/ws/depth`)
 
@@ -88,7 +87,6 @@ Implement the core features in the provided NestJS skeleton (src/app.module.ts, 
 - Handle disconnects gracefully. Limit to 100 concurrent connections.
 - Validation: Use Zod to parse incoming messages (if any, e.g., for subscriptions).
 
----
 
 ### 3. Market Order Execution Endpoint (`POST /market`)
 
@@ -143,6 +141,8 @@ redis-cli
 > ZRANGE bids 0 9 WITHSCORES  # Top 10 bids (reverse sort in code)
 > ZRANGE asks 0 9 WITHSCORES  # Top 10 asks
 ```
+
+---
 
 ## Submission Guidelines
 
